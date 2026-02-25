@@ -1,0 +1,162 @@
+html,
+body {
+	margin: 0;
+	font-size: 100%;
+	background: #F2F2F2;
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+	background-color: #120021;
+
+}
+
+/*menú flotante*/
+
+header {
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	background-color: #120021;
+	padding: 0 40px;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+nav:after {
+	content: "";
+	display:  table;
+	clear: both;
+}
+
+nav ul {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li {
+	margin: 0px 1em;
+	
+	float: left;
+
+}
+
+.menu li a {
+	font-weight: 600;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 10px 0;
+	color: #F2F2F2;
+	text-transform: uppercase;
+	text-decoration: none; /* quita el subrayado */
+
+}
+
+nav .menu li a:hover {
+	color: #00E5FF;
+}
+
+.menu li.active a {
+	color: #00E5FF;
+}
+
+nav ul li:hover > ul {
+	display: inherit;
+}
+
+/*banner*/
+
+.banner{
+    background-image: url("imagenes/img_1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: #F2F2F2;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:hover {
+    background-image: url("imagenes/img_2.jpeg");
+}
+
+.banner h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner p{
+    font-size: 20px;
+}
+
+/* contenido*/
+.contenido {
+    background-color: #120021;
+    padding: 40px 60px;
+    color: #F2F2F2;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.perfil-texto {
+    width: 65%;
+}
+
+/* IMAGEN */
+.imagen img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #00E5FF;
+}
+
+/* SECCIÓN HOBBIES */
+.contenido-hobbies {
+    background-color: #120021; /* morado oscuro */
+    padding: 80px 60px;
+    color: #F2F2F2;
+}
+
+/* FLEX */
+.hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contacto {
+  padding: 120px 20px; /* baja el contenido para que el menú no lo tape */
+  background: #12001f; /* morado oscuro */
+  color: white;
+  text-align: center;
+}
+
+.contacto h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.contacto iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 800px;
+  border-radius: 15px;
+  border: 2px solid #00eaff; /* azul fluorescente */
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
+}
